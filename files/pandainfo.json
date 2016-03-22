@@ -1,0 +1,3 @@
+{"name":"Sparky The Bear", "lovesPandas":true}
+{"name": "Holden"}
+{"name":"MiniTest", "lovesPandas":true, "knows":{"friends": ["holden"]}}
