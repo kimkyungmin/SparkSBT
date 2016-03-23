@@ -17,3 +17,5 @@ libraryDependencies ++= Seq(
   "com.fasterxml.jackson.core" % "jackson-databind" % "2.4.0"
   , "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.4.0"
 )
+
+libraryDependencies += "au.com.bytecode" % "opencsv" % "2.4"
