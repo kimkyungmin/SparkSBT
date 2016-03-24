@@ -19,3 +19,11 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += "au.com.bytecode" % "opencsv" % "2.4"
+
+libraryDependencies ++= Seq(
+  "org.apache.spark" % "spark-hive_2.11" % "1.6.0",
+  "commons-codec" % "commons-codec" % "1.10",
+  "jline" % "jline" % "2.12.1"
+)
+
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.32"
