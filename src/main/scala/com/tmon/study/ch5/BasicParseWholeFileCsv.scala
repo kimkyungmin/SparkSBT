@@ -1,6 +1,10 @@
 package com.tmon.study.ch5
 
 
+import java.io.StringReader
+import scala.collection.JavaConversions._
+
+import au.com.bytecode.opencsv.CSVReader
 import org.apache.spark._
 
 /**
@@ -20,10 +24,12 @@ object BasicParseWholeFileCsv {
 
     println(input.collect().mkString("\n"))
 
-   /* val result = input.flatMap{
+    val result = input.flatMap{
       case (_, txt) =>
         val reader = new CSVReader(new StringReader(txt));
-        reader.readAll()
-    }*/
+        reader.readAll().map( x => Person(x(0), x(1)))
+    }
+
+    println(result.collect().mkString("\n"))
   }
 }
