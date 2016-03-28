@@ -41,4 +41,7 @@ object LoadSimpleJdbc {
     (r.getInt(1), r.getString(2))
   }
 
+
+
+  
 }
