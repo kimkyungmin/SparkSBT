@@ -3,3 +3,4 @@ target
 files/result
 files/result*
 files/sequnce_file
+metastore_db/*

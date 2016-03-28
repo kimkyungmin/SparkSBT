@@ -24,6 +24,8 @@ object LoadSimpleJdbc {
 
     myRDD.foreach(println)
     println("myRDD's partition size : " + myRDD.partitions.size)
+
+
   }
 
   def createConnection() = {
